@@ -1,0 +1,45 @@
+version: "3"
+services:
+  ###### DRUPAL 9 ######
+  drupal:
+    image: drupal:9
+    container_name: drupal-9
+    restart: always
+    environment:
+      DATABASE_HOST: mysql
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/opt/drupal
+    networks:
+      - network
+    depends_on:
+      - mysql
+
+  ###### MySQL ######
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: "drupal"
+      MYSQL_USER: "drupal"
+      MYSQL_PASSWORD: "drupal"
+      MYSQL_ROOT_PASSWORD: "drupal"
+      MYSQL_MAX_ALLOWED_PACKET: "1024M"
+    ports:
+      - 3306:3306
+    expose:
+      - "3306"
+    volumes:
+      - db:/var/lib/mysql
+    networks:
+      - network
+
+###### NETWORKS ######
+networks:
+  network:
+
+###### VOLUMES ######
+volumes:
+  db:
