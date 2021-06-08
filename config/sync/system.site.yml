@@ -1,0 +1,14 @@
+uuid: fc168001-16fb-4208-807c-43f73cd38c5b
+name: 'Drupal boilerplate'
+mail: web@yd-group.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
