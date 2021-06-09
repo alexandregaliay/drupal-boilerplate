@@ -1,0 +1,22 @@
+name: Starter
+type: theme
+base theme: classy
+description: Basic theme for Drupal Boilerplate
+version: 1.0
+core_version_requirement: ^8 || ^9
+# Defines libraries group in which we can add css/js.
+libraries:
+  - starter/global
+# Defines custom logo path
+logo: "logo.png"
+# Regions
+regions:
+  header: Header
+  primary_menu: Main navigation
+  highlighted: Highlighted
+  help: Help
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: Left sidebar
+  sidebar_second: Right sidebar
+  footer: Footer

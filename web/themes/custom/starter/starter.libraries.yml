@@ -1,0 +1,8 @@
+global:
+  css:
+    base:
+      css/base.css: {}
+    layout:
+      css/layout.css: {}
+    theme:
+      css/theme.css: {}
