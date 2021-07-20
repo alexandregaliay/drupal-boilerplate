@@ -1,0 +1,132 @@
+/**************************************************
+ *                                                *
+ *  Written by Alexandre Galiay @ YD Group        *
+ *                                                *
+ **************************************************/
+
+/**----- Fonts -----
+ *
+ *
+ */
+
+/**----- Colors -----
+ *
+ *
+ */
+
+/**----------  Mouse selection  ----------*/
+
+::selection {
+  background: #000;
+  /* Safari */
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #000;
+  /* Firefox */
+  color: #fff;
+}
+
+/**----------  Reset  ----------*/
+
+:root {
+  font-size: 16px;
+}
+
+.layout-container * {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+/**----------  Global  ----------*/
+
+.layout-container {
+  background: #fff;
+  overflow: hidden;
+}
+
+body {
+  /* font-family: "font"; */
+  color: #000;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  /* font-family: "font"; */
+  line-height: 1.2em;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-size: 3.4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.6em;
+}
+
+h4 {
+  font-size: 2.4em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    text-decoration 0.3s ease, border-color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a img {
+  transition: opacity 0.3s ease;
+}
+
+a:hover img {
+  opacity: 0.8;
+}
+
+ul {
+  margin: 1em 0;
+  padding-left: 1em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+main .node--unpublished {
+  background: none;
+}
+
+main .node--unpublished:before {
+  content: "UNPUBLISHED";
+  /* font-family: "font"; */
+  font-size: 2em;
+  line-height: 1em;
+  display: block;
+  background: #666;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+}
