@@ -1,9 +1,10 @@
 version: "3"
 services:
-  ###### DRUPAL 9 ######
+  ###### DRUPAL ######
   drupal:
-    image: drupal:9
-    container_name: drupal-9
+    image: drupal-custom:9
+    container_name: web
+    build: .
     restart: always
     environment:
       DATABASE_HOST: mysql
@@ -19,7 +20,7 @@ services:
   ###### MySQL ######
   mysql:
     image: mysql:5.7
-    container_name: mysql-5.7
+    container_name: mysql
     restart: always
     environment:
       MYSQL_DATABASE: "drupal"
