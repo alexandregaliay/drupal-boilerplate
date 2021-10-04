@@ -1,0 +1,7 @@
+uuid: 9c99c072-64ae-4cdb-ae4c-9806468bc40d
+langcode: fr
+status: true
+dependencies: {  }
+id: administer_structure
+label: 'Administer structure'
+route: system.admin_structure

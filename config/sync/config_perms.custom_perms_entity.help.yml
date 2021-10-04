@@ -1,0 +1,7 @@
+uuid: 203a008f-a916-4775-9011-43a6401a129c
+langcode: fr
+status: true
+dependencies: {  }
+id: help
+label: Help
+route: help.main
