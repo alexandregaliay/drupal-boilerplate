@@ -1,0 +1,20 @@
+uuid: 5fc2e842-b782-4495-9c74-a51fbbb8a163
+langcode: fr
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'edit any home content'
+  - 'edit any page content'
+  - 'use text format basic_html'
+  - 'view any unpublished content'
+  - 'view the administration theme'

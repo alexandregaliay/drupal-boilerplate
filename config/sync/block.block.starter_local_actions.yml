@@ -1,0 +1,20 @@
+uuid: c833fa6e-4c7a-422e-b86f-0c429274935b
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - starter
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: starter_local_actions
+theme: starter
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

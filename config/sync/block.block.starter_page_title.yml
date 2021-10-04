@@ -1,0 +1,20 @@
+uuid: cd50449b-98b3-439e-a985-dbd41b4ba957
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - starter
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: starter_page_title
+theme: starter
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titre de page'
+  provider: core
+  label_display: '0'
+visibility: {  }
