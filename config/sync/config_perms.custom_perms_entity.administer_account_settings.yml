@@ -1,9 +1,9 @@
-uuid: 24438b22-9729-4973-9410-0e2a469c464f
-langcode: fr
-status: true
+uuid: 5db895cf-a0cc-4f80-bbb9-dda37623868c
+langcode: en
+status: false
 dependencies: {  }
 _core:
   default_config_hash: G3RasgGpLT7MiDfwt1phJQ229-nSxEF7TVbk-QrirXU
 id: administer_account_settings
-label: 'Administer account settings'
+label: 'Administrer les paramètres du compte'
 route: entity.user.admin_form

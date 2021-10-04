@@ -1,0 +1,7 @@
+uuid: 01289f1a-e7ca-4f99-9ae9-607e561577bb
+langcode: fr
+status: true
+dependencies: {  }
+id: administer_configuration
+label: 'Administer configuration'
+route: system.admin_config
