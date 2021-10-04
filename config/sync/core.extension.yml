@@ -8,12 +8,15 @@ module:
   breakpoint: 0
   ckeditor: 0
   config: 0
+  config_perms: 0
   contextual: 0
   ctools: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  email_registration: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
@@ -24,6 +27,7 @@ module:
   language: 0
   link: 0
   locale: 0
+  mailsystem: 0
   menu_link_content: 0
   menu_ui: 0
   module_filter: 0
@@ -34,7 +38,10 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  responsive_menu: 0
   search: 0
+  shield: 0
+  swiftmailer: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -43,8 +50,10 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  webform: 0
   pathauto: 1
   views: 10
+  paragraphs: 11
   minimal: 1000
 theme:
   stable: 0

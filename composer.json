@@ -12,17 +12,51 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "frdh/mmenu-js",
+                "type": "drupal-library",
+                "version": "8.5.23",
+                "dist": {
+                    "url": "https://github.com/FrDH/mmenu-js/archive/refs/tags/v8.5.23.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "joeldbirch/superfish",
+                "type": "drupal-library",
+                "version": "1.7.10",
+                "dist": {
+                    "url": "https://github.com/joeldbirch/superfish/archive/refs/tags/v1.7.10.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/config_perms": "^2.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
+        "drupal/email_registration": "^1.1",
+        "drupal/mailsystem": "^4.3",
         "drupal/module_filter": "^3.2",
+        "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
-        "drush/drush": "^10.5"
+        "drupal/responsive_menu": "^4.4",
+        "drupal/shield": "^1.4",
+        "drupal/swiftmailer": "^2.0",
+        "drupal/webform": "^6.0",
+        "drush/drush": "^10.5",
+        "frdh/mmenu-js": "^8.5",
+        "joeldbirch/superfish": "^1.7"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -41,6 +75,9 @@
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
+            ],
+            "web/libraries/mmenu": [
+                "frdh/mmenu-js"
             ],
             "web/libraries/{$name}": [
                 "type:drupal-library"
