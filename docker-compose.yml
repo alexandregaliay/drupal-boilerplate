@@ -16,6 +16,8 @@ services:
       - network
     depends_on:
       - mysql
+    env_file:
+      - .env
 
   ###### MySQL ######
   mysql:
