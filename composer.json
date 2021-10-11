@@ -56,7 +56,8 @@
         "drupal/webform": "^6.0",
         "drush/drush": "^10.5",
         "frdh/mmenu-js": "^8.5",
-        "joeldbirch/superfish": "^1.7"
+        "joeldbirch/superfish": "^1.7",
+        "symfony/dotenv": "^5.3"
     },
     "conflict": {
         "drupal/drupal": "*"
