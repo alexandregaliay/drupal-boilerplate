@@ -2,9 +2,12 @@
 #
 # earlier versions of Drupal are tracked in `community/PHP/`
 
-# Ignore configuration files that may contain sensitive information
-/web/sites/*/*settings*.php
-/web/sites/*/*services*.yml
+# Ignore env vars
+.env
+
+# Ignore default configuration files
+/web/sites/*/default.settings.php
+/web/sites/*/default.services.yml
 
 # Ignore paths that may contain user-generated content
 /web/sites/*/files
