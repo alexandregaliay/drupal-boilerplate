@@ -187,7 +187,7 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: Block
+    display_title: Bloc
     display_plugin: block
     position: 1
     display_options:

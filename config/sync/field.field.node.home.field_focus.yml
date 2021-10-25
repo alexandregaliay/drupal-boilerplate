@@ -1,0 +1,34 @@
+uuid: bc8fef10-b07d-49ea-9fc5-238e22de862f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_focus
+    - node.type.home
+    - paragraphs.paragraphs_type.text_image
+  module:
+    - entity_reference_revisions
+id: node.home.field_focus
+field_name: field_focus
+entity_type: node
+bundle: home
+label: Focus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text_image: text_image
+    target_bundles_drag_drop:
+      text_image:
+        enabled: true
+        weight: 3
+      text_only:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

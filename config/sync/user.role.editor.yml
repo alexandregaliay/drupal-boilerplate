@@ -16,5 +16,6 @@ permissions:
   - 'edit any home content'
   - 'edit any page content'
   - 'use text format basic_html'
+  - 'use text format ckeditor'
   - 'view any unpublished content'
   - 'view the administration theme'
