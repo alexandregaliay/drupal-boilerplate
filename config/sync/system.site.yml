@@ -1,11 +1,11 @@
 uuid: c6295904-f6d1-4ff0-90c3-4a4c592e3dad
-name: 'Drush Site-Install'
-mail: admin@example.com
+name: 'Drupal boilerplate'
+mail: hello@alexandregaliay.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /user/login
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: fr
