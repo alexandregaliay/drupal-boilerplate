@@ -17,20 +17,20 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: |
+elements: |-
   name:
-    '#title': 'Your Name'
     '#type': textfield
+    '#title': Nom
     '#required': true
     '#default_value': '[current-user:display-name]'
   email:
-    '#title': 'Your Email'
     '#type': email
+    '#title': Email
     '#required': true
     '#default_value': '[current-user:mail]'
   subject:
-    '#title': Subject
     '#type': textfield
+    '#title': Objet
     '#required': true
     '#test': 'Testing contact webform from [site:name]'
   message:
@@ -41,7 +41,7 @@ elements: |
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
-    '#submit__label': 'Send message'
+    '#submit__label': Envoyer
 css: ''
 javascript: ''
 settings:
