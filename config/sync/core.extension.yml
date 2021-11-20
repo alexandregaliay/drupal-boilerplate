@@ -38,6 +38,7 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  redirect: 0
   responsive_menu: 0
   search: 0
   shield: 0
