@@ -42,6 +42,8 @@
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/adminimal_admin_toolbar": "^1.11",
+        "drupal/adminimal_theme": "^1.6",
         "drupal/config_perms": "^2.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
@@ -109,6 +111,11 @@
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
+        },
+        "patches": {
+            "drupal/adminimal_admin_toolbar": {
+                "Update icon": "https://www.drupal.org/files/issues/2020-10-07/icon-update-3163092-4.patch"
+            }
         },
         "drupal-core-project-message": {
             "include-keys": [
