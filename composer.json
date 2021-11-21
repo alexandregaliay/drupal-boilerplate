@@ -58,6 +58,7 @@
         "drupal/responsive_menu": "^4.4",
         "drupal/shield": "^1.4",
         "drupal/swiftmailer": "^2.0",
+        "drupal/view_unpublished": "^1.0",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.5",
         "frdh/mmenu-js": "^8.5",
