@@ -48,6 +48,7 @@
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
+        "drupal/editor_advanced_link": "^2.0",
         "drupal/email_registration": "^1.1",
         "drupal/mailsystem": "^4.3",
         "drupal/module_filter": "^3.2",
