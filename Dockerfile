@@ -1,5 +1,5 @@
 # Docker base image
-FROM drupal:9
+FROM drupal:9-php7.4-apache
 
 # Install packages
 RUN apt-get update && apt-get install --no-install-recommends -y \
