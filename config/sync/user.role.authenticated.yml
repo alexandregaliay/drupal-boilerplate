@@ -1,7 +1,9 @@
 uuid: aa335abf-67db-4018-87e2-485127754e5f
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated

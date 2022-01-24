@@ -1,7 +1,19 @@
 uuid: 5fc2e842-b782-4495-9c74-a51fbbb8a163
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.ckeditor
+    - node.type.home
+    - node.type.page
+  module:
+    - contextual
+    - filter
+    - node
+    - quickedit
+    - system
+    - toolbar
+    - view_unpublished
 id: editor
 label: Editor
 weight: 3
@@ -15,7 +27,6 @@ permissions:
   - 'access toolbar'
   - 'edit any home content'
   - 'edit any page content'
-  - 'use text format basic_html'
   - 'use text format ckeditor'
   - 'view any unpublished content'
   - 'view the administration theme'
