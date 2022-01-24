@@ -2,11 +2,11 @@ uuid: cac024c0-1355-4491-99b0-1c74d971746c
 langcode: fr
 status: true
 dependencies:
+  module:
+    - menu_ui
   enforced:
     module:
       - webform_node
-  module:
-    - menu_ui
 third_party_settings:
   menu_ui:
     available_menus:

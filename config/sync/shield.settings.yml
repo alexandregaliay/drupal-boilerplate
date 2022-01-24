@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yHBuI_J_kdrugm0JRNsxHODZ0qQyPzejI6r1ZPacK5Q
+langcode: fr
 shield_enable: true
 credential_provider: shield
 credentials:
@@ -9,8 +12,11 @@ credentials:
     pass_key: ''
   multikey:
     user_pass_key: ''
-print: Hello!
 allow_cli: true
-_core:
-  default_config_hash: yHBuI_J_kdrugm0JRNsxHODZ0qQyPzejI6r1ZPacK5Q
-langcode: fr
+debug_header: false
+unset_basic_auth_headers: true
+print: Hello!
+method: 0
+allowlist: null
+domains: ''
+path: ''
