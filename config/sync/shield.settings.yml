@@ -1,7 +1,7 @@
 _core:
   default_config_hash: yHBuI_J_kdrugm0JRNsxHODZ0qQyPzejI6r1ZPacK5Q
 langcode: fr
-shield_enable: true
+shield_enable: false
 credential_provider: shield
 credentials:
   shield:
