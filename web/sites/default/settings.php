@@ -2,16 +2,6 @@
 
 // phpcs:ignoreFile
 
-// Load env vars
-use Symfony\Component\Dotenv\Dotenv;
-
-$dotenv = new Dotenv();
-$dotenv->usePutenv(TRUE);
-$envFile = $app_root . "/../.env";
-if(file_exists($envFile)){
-  $dotenv->load($envFile);
-}
-
 /**
  * @file
  * Drupal site-specific configuration file.
@@ -749,7 +739,8 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  */
 
 $settings['trusted_host_patterns'] = [
-  '^localhost$'
+  '^localhost$',
+  '^drupalboilerplate\.test$',
 ];
 
 
