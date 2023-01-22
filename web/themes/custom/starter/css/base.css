@@ -41,7 +41,7 @@
 }
 
 body {
-  /* font-family: "font"; */
+  font-family: Arial, Helvetica, sans-serif;
   color: #000;
   font-size: 1em;
   line-height: 1.5em;
