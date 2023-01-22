@@ -1,53 +1,71 @@
-uuid: a8fe03a1-c8f7-4310-83bb-12737e226190
+uuid: 29513368-dacf-4da1-a1ab-134921f5d199
 langcode: fr
 status: true
 dependencies:
   config:
     - filter.format.ckeditor
   module:
-    - ckeditor
+    - ckeditor5
 format: ckeditor
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formats
-          items:
-            - Bold
-            - Italic
-        -
-          name: Liens
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Listes
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Média
-          items:
-            - Blockquote
-            - DrupalImage
-        -
-          name: Format
-          items:
-            - Format
-        -
-          name: Outils
-          items:
-            - PasteFromWord
-            - RemoveFormat
-            - Source
-  plugins: {  }
+    items:
+      - bold
+      - italic
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalInsertImage
+      - '|'
+      - heading
+      - '|'
+      - removeFormat
+      - sourceEditing
+      - '|'
+      - code
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<span>'
+        - '<a hreflang>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_imageResize:
+      allow_resize: true
+    editor_advanced_link_link:
+      enabled_attributes:
+        - class
+        - title
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0
