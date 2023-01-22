@@ -44,7 +44,6 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
         "drupal/adminimal_admin_toolbar": "^1.11",
-        "drupal/adminimal_theme": "^1.6",
         "drupal/config_perms": "^2.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-recommended": "^9.1",
