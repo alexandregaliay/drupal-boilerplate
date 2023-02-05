@@ -1,111 +1,137 @@
 {
-    "name": "drupal/recommended-project",
-    "description": "Project template for Drupal 9 projects with a relocated document root",
-    "type": "project",
-    "license": "GPL-2.0-or-later",
-    "homepage": "https://www.drupal.org/project/drupal",
-    "support": {
-        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
-        "chat": "https://www.drupal.org/node/314178"
+  "name": "drupal/recommended-project",
+  "description": "Project template for Drupal 9 projects with a relocated document root",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/drupal",
+  "support": {
+    "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+    "chat": "https://www.drupal.org/node/314178"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "frdh/mmenu-js",
-                "type": "drupal-library",
-                "version": "8.5.23",
-                "dist": {
-                    "url": "https://github.com/FrDH/mmenu-js/archive/refs/tags/v8.5.23.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "joeldbirch/superfish",
-                "type": "drupal-library",
-                "version": "1.7.10",
-                "dist": {
-                    "url": "https://github.com/joeldbirch/superfish/archive/refs/tags/v1.7.10.zip",
-                    "type": "zip"
-                }
-            }
+    {
+      "type": "package",
+      "package": {
+        "name": "frdh/mmenu-js",
+        "type": "drupal-library",
+        "version": "8.5.23",
+        "dist": {
+          "url": "https://github.com/FrDH/mmenu-js/archive/refs/tags/v8.5.23.zip",
+          "type": "zip"
         }
-    ],
-    "require": {
-        "php": ">=8.1",
-        "composer/installers": "^1.9",
-        "cweagans/composer-patches": "^1.7",
-        "drupal/admin_toolbar": "^3.0",
-        "drupal/adminimal_admin_toolbar": "^1.11",
-        "drupal/config_perms": "^2.0",
-        "drupal/core-composer-scaffold": "^9.1",
-        "drupal/core-recommended": "^9.1",
-        "drupal/editor_advanced_link": "^2.0",
-        "drupal/email_registration": "^1.1",
-        "drupal/mailsystem": "^4.3",
-        "drupal/module_filter": "^3.2",
-        "drupal/paragraphs": "^1.12",
-        "drupal/pathauto": "^1.8",
-        "drupal/redirect": "^1.6",
-        "drupal/responsive_menu": "^4.4",
-        "drupal/shield": "^1.4",
-        "drupal/swiftmailer": "^2.0",
-        "drupal/view_unpublished": "^1.0",
-        "drupal/webform": "^6.0",
-        "drush/drush": "^10.5",
-        "frdh/mmenu-js": "^8.5",
-        "joeldbirch/superfish": "^1.7",
-        "symfony/dotenv": "^5.3"
+      }
     },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "composer/installers": true,
-            "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+    {
+      "type": "package",
+      "package": {
+        "name": "joeldbirch/superfish",
+        "type": "drupal-library",
+        "version": "1.7.10",
+        "dist": {
+          "url": "https://github.com/joeldbirch/superfish/archive/refs/tags/v1.7.10.zip",
+          "type": "zip"
         }
-    },
-    "autoload": {
-        "files": ["load.environment.php"]
-    },
-    "extra": {
-        "drupal-scaffold": {
-            "locations": {
-                "web-root": "web/"
-            },
-            "file-mapping": {
-                "[web-root]/sites/development.services.yml": false
-            }
-        },
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/mmenu": ["frdh/mmenu-js"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
-            "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
-        },
-        "patches": {
-            "drupal/adminimal_admin_toolbar": {
-                "Update icon": "https://www.drupal.org/files/issues/2020-10-07/icon-update-3163092-4.patch"
-            }
-        }
+      }
     }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "composer/installers": "^1.9",
+    "cweagans/composer-patches": "^1.7",
+    "drupal/admin_toolbar": "^3.0",
+    "drupal/adminimal_admin_toolbar": "^1.11",
+    "drupal/config_perms": "^2.0",
+    "drupal/core-composer-scaffold": "^9.1",
+    "drupal/core-recommended": "^9.1",
+    "drupal/editor_advanced_link": "^2.0",
+    "drupal/email_registration": "^1.1",
+    "drupal/mailsystem": "^4.3",
+    "drupal/module_filter": "^3.2",
+    "drupal/paragraphs": "^1.12",
+    "drupal/pathauto": "^1.8",
+    "drupal/redirect": "^1.6",
+    "drupal/responsive_menu": "^4.4",
+    "drupal/shield": "^1.4",
+    "drupal/swiftmailer": "^2.0",
+    "drupal/view_unpublished": "^1.0",
+    "drupal/webform": "^6.0",
+    "drush/drush": "^10.5",
+    "frdh/mmenu-js": "^8.5",
+    "joeldbirch/superfish": "^1.7",
+    "symfony/dotenv": "^5.3"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "cweagans/composer-patches": true,
+      "drupal/core-composer-scaffold": true,
+      "drupal/core-project-message": true
+    }
+  },
+  "autoload": {
+    "files": [
+      "load.environment.php"
+    ]
+  },
+  "scripts": {
+    "lup": "./scripts/local-update.sh",
+    "rup": "./scripts/remote-update.sh"
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      },
+      "file-mapping": {
+        "[web-root]/sites/development.services.yml": false
+      }
+    },
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/mmenu": [
+        "frdh/mmenu-js"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/Commands/contrib/{$name}": [
+        "type:drupal-drush"
+      ],
+      "web/modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "web/profiles/custom/{$name}": [
+        "type:drupal-custom-profile"
+      ],
+      "web/themes/custom/{$name}": [
+        "type:drupal-custom-theme"
+      ]
+    },
+    "patches": {
+      "drupal/adminimal_admin_toolbar": {
+        "Update icon": "https://www.drupal.org/files/issues/2020-10-07/icon-update-3163092-4.patch"
+      }
+    }
+  }
 }
