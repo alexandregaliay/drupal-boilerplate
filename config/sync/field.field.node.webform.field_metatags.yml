@@ -1,0 +1,21 @@
+uuid: c41b6cbb-a6e9-4dc4-81a9-7f5dd645a334
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.webform
+  module:
+    - metatag
+id: node.webform.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: webform
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag
