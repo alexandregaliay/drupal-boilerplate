@@ -38,6 +38,10 @@
 .layout-container {
   background: #fff;
   overflow: hidden;
+  max-width: 1408px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
 }
 
 body {
