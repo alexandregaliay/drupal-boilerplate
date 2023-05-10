@@ -5,8 +5,8 @@ horizontal_menu: main
 horizontal_depth: 9
 off_canvas_menus: main
 horizontal_wrapping_element: nav
-horizontal_breakpoint: wide
-horizontal_media_query: '(min-width: 960px)'
+horizontal_breakpoint: narrow
+horizontal_media_query: 'all and (min-width: 768px)'
 include_css: true
 off_canvas_position: left
 off_canvas_theme: theme-dark
@@ -21,7 +21,7 @@ breakpoint_css_filepath: 'public://css'
 use_breakpoint: true
 allow_admin: false
 wrapper_admin: true
-wrapper_theme: false
+wrapper_theme: true
 use_polyfills: false
 modify_viewport: true
-use_bootstrap: true
+use_bootstrap: false

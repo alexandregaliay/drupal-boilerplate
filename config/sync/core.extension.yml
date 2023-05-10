@@ -4,7 +4,6 @@ langcode: fr
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
-  adminimal_admin_toolbar: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -26,6 +25,8 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gin_login: 0
+  gin_toolbar: 0
   help: 0
   history: 0
   image: 0
@@ -69,4 +70,5 @@ theme:
   claro: 0
   stable9: 0
   starterkit: 0
+  gin: 0
 profile: minimal

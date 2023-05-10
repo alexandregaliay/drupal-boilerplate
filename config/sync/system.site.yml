@@ -4,7 +4,7 @@ langcode: fr
 uuid: c6295904-f6d1-4ff0-90c3-4a4c592e3dad
 name: 'Drupal boilerplate'
 mail: hello@alexandregaliay.com
-slogan: ''
+slogan: 'Start with the drop'
 page:
   403: ''
   404: ''
