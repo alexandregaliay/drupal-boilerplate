@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: YPgxGC8TmLtfCOLGCCHJcdH2llA7QksUkdi1abhB7Ro
 id: webform_submissions
-label: 'Webform submissions'
+label: 'Soumissions de webform'
 module: views
 description: 'Default webform submissions views.'
 tag: ''
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Webform submissions'
+      title: 'Soumissions de webform'
       fields:
         sid:
           id: sid
@@ -102,7 +102,7 @@ display:
           entity_type: webform_submission
           entity_field: in_draft
           plugin_id: field
-          label: Draft
+          label: Brouillon
           exclude: false
           alter:
             alter_text: false
@@ -731,7 +731,7 @@ display:
           entity_type: webform_submission
           entity_field: in_draft
           plugin_id: field
-          label: Draft
+          label: Brouillon
           exclude: false
           alter:
             alter_text: false
@@ -999,7 +999,7 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
-          label: Completed
+          label: Terminé
           exclude: false
           alter:
             alter_text: false
@@ -1194,7 +1194,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Is draft'
+            label: 'Est un brouillon'
             description: ''
             use_operator: false
             operator: in_draft_op
@@ -1653,7 +1653,7 @@ display:
           entity_type: webform_submission
           entity_field: in_draft
           plugin_id: field
-          label: Draft
+          label: Brouillon
           exclude: false
           alter:
             alter_text: false
@@ -1921,7 +1921,7 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
-          label: Completed
+          label: Terminé
           exclude: false
           alter:
             alter_text: false
@@ -2170,7 +2170,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Is draft'
+            label: 'Est un brouillon'
             description: ''
             use_operator: false
             operator: in_draft_op
@@ -2487,7 +2487,7 @@ display:
           entity_type: webform_submission
           entity_field: in_draft
           plugin_id: field
-          label: Draft
+          label: Brouillon
           exclude: false
           alter:
             alter_text: false
@@ -2755,7 +2755,7 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
-          label: Completed
+          label: Terminé
           exclude: false
           alter:
             alter_text: false
@@ -2951,7 +2951,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Is draft'
+            label: 'Est un brouillon'
             description: ''
             use_operator: false
             operator: in_draft_op
