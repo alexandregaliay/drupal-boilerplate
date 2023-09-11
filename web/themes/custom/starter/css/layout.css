@@ -4,6 +4,12 @@ header {
   margin: 30px 0;
 }
 
+.responsive-menu-toggle-icon:before,
+.responsive-menu-toggle-icon:after,
+.responsive-menu-toggle-icon span.icon {
+  background: #000;
+}
+
 .block-system-branding-block {
   display: flex;
   align-items: center;

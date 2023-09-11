@@ -30,6 +30,9 @@ module:
   help: 0
   history: 0
   image: 0
+  jquery_ui: 0
+  jquery_ui_autocomplete: 0
+  jquery_ui_menu: 0
   language: 0
   link: 0
   locale: 0
@@ -55,6 +58,7 @@ module:
   token: 0
   toolbar: 0
   update: 0
+  upgrade_status: 0
   user: 0
   view_unpublished: 0
   views_ui: 0

@@ -2,7 +2,7 @@ name: Starter
 type: theme
 base theme: starterkit
 description: Basic theme for Drupal Boilerplate
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 # Defines libraries group in which we can add css/js.
 libraries:
   - starter/global
