@@ -8,6 +8,7 @@ dependencies:
     - node.type.page
   module:
     - contextual
+    - file
     - filter
     - node
     - system
@@ -23,6 +24,7 @@ permissions:
   - 'access contextual links'
   - 'access site in maintenance mode'
   - 'access toolbar'
+  - 'delete own files'
   - 'edit any home content'
   - 'edit any page content'
   - 'use text format ckeditor'

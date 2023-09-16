@@ -13,10 +13,10 @@ logo:
 third_party_settings:
   shortcut:
     module_link: true
-preset_accent_color: blue
+preset_accent_color: light_blue
 preset_focus_color: gin
-enable_darkmode: auto
-classic_toolbar: horizontal
+enable_darkmode: '0'
+classic_toolbar: classic
 secondary_toolbar_frontend: true
 high_contrast_mode: false
 accent_color: ''
