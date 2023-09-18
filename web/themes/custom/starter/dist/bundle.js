@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){var t=document.querySelectorAll(".navbar-burger");console.log(t),t.length>0&&t.forEach((function(t){t.dataset.target&&t.addEventListener("click",(function(){var e=t.dataset.target,n=document.getElementById(e);t.classList.toggle("is-active"),n.classList.toggle("is-active")}))}))}))})();

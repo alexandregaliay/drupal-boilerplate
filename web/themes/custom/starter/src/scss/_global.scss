@@ -1,0 +1,11 @@
+::selection {
+  background: $link;
+  /* Safari */
+  color: $link-invert;
+}
+
+::-moz-selection {
+  background: $link;
+  /* Firefox */
+  color: $link-invert;
+}
