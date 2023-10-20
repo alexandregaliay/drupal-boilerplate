@@ -1,0 +1,14 @@
+{% if breadcrumb %}
+  <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+    <ul>
+      {% for item in breadcrumb %}
+        {% if item.url %}
+          <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+        {% else %}
+          <li class="is-active"><a aria-current="pagee">{{ item.text }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

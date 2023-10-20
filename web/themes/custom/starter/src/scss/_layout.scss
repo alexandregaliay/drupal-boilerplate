@@ -14,6 +14,22 @@
   font-size: 22px;
 }
 
+/*----------  Navigation  ----------*/
+
+.navbar-menu .menu-item {
+  display: flex;
+
+  a {
+    @extend .navbar-item;
+  }
+
+  &--active-trail a {
+    @extend .navbar-item;
+    @extend .is-tab;
+    @extend .is-active;
+  }
+}
+
 /*----------  Content  ----------*/
 
 .field--name-body {

@@ -12,6 +12,8 @@ libraries-override:
   starterkit/base:
     css:
       component:
+        css/components/breadcrumb.css: false
+        css/components/menu.css: false
         css/components/tabs.css: false
 
 # Defines custom logo path
