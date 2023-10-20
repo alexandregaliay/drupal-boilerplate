@@ -1,0 +1,59 @@
+<?php
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+
+
+/**
+ * Implements hook_token_info().
+ */
+function custom_tokens_token_info() : array {
+  $info = [];
+
+  $info['types']['custom_tokens'] = [
+    'name' => t('Custom Tokens'),
+    'description' => t('Tokens available for specific use on this website'),
+  ];
+
+  $info['tokens']['custom_tokens']['news_list'] = [
+    'name' => 'News List',
+    'description' => t('News list title'),
+  ];
+
+  return $info;
+}
+
+
+/**
+ * Implements hook_tokens().
+ */
+function custom_tokens_tokens($type, $tokens, array $data, array $options, \Drupal\Core\Render\BubbleableMetadata $bubbleable_metadata) : array {
+  $replacements = [];
+
+  if ($type == 'custom_tokens') {
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        case 'news_list':
+          $entityTypeManager = \Drupal::entityTypeManager();
+          $query = $entityTypeManager->getStorage('node')->getQuery();
+          $node_ids = $query
+            ->condition('type', 'news_list')
+            ->range(0, 1)
+            ->accessCheck(FALSE)
+            ->execute();
+
+          if (!empty($node_ids)) {
+            $node_id = reset($node_ids);
+            $node = $entityTypeManager->getStorage('node')->load($node_id);
+            $replacements[$original] = $node->getTitle();
+          } else {
+            $replacements[$original] = ''; // Handle the case when no "news_list" node is found.
+          }
+          break;
+
+        default:
+          break;
+      }
+    }
+  }
+
+  return $replacements;
+}

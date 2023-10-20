@@ -1,0 +1,8 @@
+name: Custom Tokens
+description: Provides custom tokens to use with pathauto
+package: Boilerplate
+
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - pathauto:pathauto
