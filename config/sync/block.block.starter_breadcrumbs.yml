@@ -1,0 +1,20 @@
+uuid: dad432f6-267c-457d-8daf-637c78e7331c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - starter
+id: starter_breadcrumbs
+theme: starter
+region: breadcrumb
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

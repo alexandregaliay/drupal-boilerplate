@@ -1,18 +1,16 @@
-uuid: 60638cfb-4b5b-49eb-b619-db8589ea7b7b
+uuid: 463bfaa3-e4d9-47ac-a59c-0dbd224dc8e3
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_metatags
-    - node.type.page
+    - field.field.node.news.body
+    - node.type.news
   module:
-    - metatag
     - text
     - user
-id: node.page.default
+id: node.news.default
 targetEntityType: node
-bundle: page
+bundle: news
 mode: default
 content:
   body:
@@ -22,17 +20,10 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_metatags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
   langcode: true

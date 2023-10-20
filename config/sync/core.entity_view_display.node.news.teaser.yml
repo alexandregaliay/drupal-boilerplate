@@ -1,21 +1,17 @@
-uuid: d1f2c918-1ce8-419e-8bbb-ccb81ee6d860
+uuid: 199b1598-78d7-436d-a7e9-519953d3760a
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.webform.body
-    - field.field.node.webform.field_metatags
-    - field.field.node.webform.webform
-    - node.type.webform
+    - field.field.node.news.body
+    - node.type.news
   module:
     - text
     - user
-_core:
-  default_config_hash: Ls5l3Xs7-YstJnurxFLKj38Exqr2JMZs1j9YeX1Kh2o
-id: node.webform.teaser
+id: node.news.teaser
 targetEntityType: node
-bundle: webform
+bundle: news
 mode: teaser
 content:
   body:
@@ -24,14 +20,12 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
-  field_metatags: true
   langcode: true
-  webform: true

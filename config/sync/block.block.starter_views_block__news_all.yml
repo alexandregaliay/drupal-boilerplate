@@ -1,0 +1,32 @@
+uuid: caf3af0c-6b21-49d7-9114-57f49a1b438e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - node
+    - views
+  theme:
+    - starter
+id: starter_views_block__news_all
+theme: starter
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news-all'
+settings:
+  id: 'views_block:news-all'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news_list: news_list

@@ -14,9 +14,11 @@ module:
   config_perms: 0
   contextual: 0
   ctools: 0
+  custom_tokens: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
+  easy_breadcrumb: 0
   editor: 0
   editor_advanced_link: 0
   email_registration: 0
@@ -38,11 +40,13 @@ module:
   locale: 0
   mailsystem: 0
   menu_link_content: 0
+  menu_trail_by_path: 0
   menu_ui: 0
   metatag: 0
   module_filter: 0
   mysql: 0
   node: 0
+  onlyone: 0
   options: 0
   page_cache: 0
   path: 0

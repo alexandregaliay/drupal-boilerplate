@@ -1,4 +1,4 @@
-uuid: 12505641-4dc0-4066-ac33-9d33ddfe23ff
+uuid: 377d0988-5610-4708-ae01-30bb0aa0476f
 langcode: fr
 status: true
 dependencies:
@@ -8,10 +8,10 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Home
-type: home
-description: 'Front page template.'
+name: News
+type: news
+description: 'News detail.'
 help: ''
-new_revision: false
-preview_mode: 1
+new_revision: true
+preview_mode: 0
 display_submitted: false
