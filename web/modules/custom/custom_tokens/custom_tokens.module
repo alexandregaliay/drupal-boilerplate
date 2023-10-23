@@ -1,6 +1,11 @@
 <?php
-use Drupal\Core\Entity\EntityTypeManagerInterface;
 
+/**
+ * @file
+ * Main module file.
+ */
+
+use Drupal\Core\Render\BubbleableMetadata;
 
 /**
  * Implements hook_token_info().
@@ -21,11 +26,10 @@ function custom_tokens_token_info() : array {
   return $info;
 }
 
-
 /**
  * Implements hook_tokens().
  */
-function custom_tokens_tokens($type, $tokens, array $data, array $options, \Drupal\Core\Render\BubbleableMetadata $bubbleable_metadata) : array {
+function custom_tokens_tokens($type, $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata) : array {
   $replacements = [];
 
   if ($type == 'custom_tokens') {
@@ -44,8 +48,10 @@ function custom_tokens_tokens($type, $tokens, array $data, array $options, \Drup
             $node_id = reset($node_ids);
             $node = $entityTypeManager->getStorage('node')->load($node_id);
             $replacements[$original] = $node->getTitle();
-          } else {
-            $replacements[$original] = ''; // Handle the case when no "news_list" node is found.
+          }
+          else {
+            // Handle the case when no "news_list" node is found.
+            $replacements[$original] = '';
           }
           break;
 
