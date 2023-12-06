@@ -2,8 +2,11 @@ uuid: aa335abf-67db-4018-87e2-485127754e5f
 langcode: fr
 status: true
 dependencies:
+  config:
+    - filter.format.webform_default
   module:
     - file
+    - filter
     - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
@@ -14,3 +17,4 @@ is_admin: false
 permissions:
   - 'access content'
   - 'delete own files'
+  - 'use text format webform_default'
