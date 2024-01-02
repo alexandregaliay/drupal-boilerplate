@@ -1,4 +1,9 @@
 @charset "utf-8";
+
+// Update Bulma's global variables
+$fullhd-enabled: false;
+$blue: #0f9cde;
+
 @import '~bulma/bulma';
 @import 'global';
 @import 'layout';
