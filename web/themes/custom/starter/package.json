@@ -12,12 +12,12 @@
     "bulma": "^0.9.4",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.8.1",
-    "mini-css-extract-plugin": "^2.7.6",
+    "css-loader": "^6.10.0",
+    "mini-css-extract-plugin": "^2.8.0",
     "node-sass": "^9.0.0",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.88.2",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   }
