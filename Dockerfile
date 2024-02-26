@@ -1,5 +1,5 @@
 # Docker base image
-FROM drupal:9-php8.1-apache
+FROM drupal:10-php8.2-fpm-bullseye
 
 # Install packages
 RUN apt-get update && apt-get install --no-install-recommends -y \

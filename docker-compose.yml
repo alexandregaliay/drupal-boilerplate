@@ -1,8 +1,8 @@
-version: "3"
+version: '3'
 services:
   ###### DRUPAL ######
   drupal:
-    image: drupal-custom:9
+    image: drupal-custom:10
     container_name: web
     build: .
     restart: always
@@ -25,15 +25,15 @@ services:
     container_name: mysql
     restart: always
     environment:
-      MYSQL_DATABASE: "drupal"
-      MYSQL_USER: "drupal"
-      MYSQL_PASSWORD: "drupal"
-      MYSQL_ROOT_PASSWORD: "drupal"
-      MYSQL_MAX_ALLOWED_PACKET: "1024M"
+      MYSQL_DATABASE: 'drupal'
+      MYSQL_USER: 'drupal'
+      MYSQL_PASSWORD: 'drupal'
+      MYSQL_ROOT_PASSWORD: 'drupal'
+      MYSQL_MAX_ALLOWED_PACKET: '1024M'
     ports:
       - 3306:3306
     expose:
-      - "3306"
+      - '3306'
     volumes:
       - db:/var/lib/mysql
     networks:
