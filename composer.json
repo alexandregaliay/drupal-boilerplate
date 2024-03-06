@@ -1,41 +1,10 @@
 {
-  "name": "drupal/recommended-project",
-  "description": "Project template for Drupal 9 projects with a relocated document root",
-  "type": "project",
-  "license": "GPL-2.0-or-later",
-  "homepage": "https://www.drupal.org/project/drupal",
-  "support": {
-    "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
-    "chat": "https://www.drupal.org/node/314178"
-  },
+  "name": "drupal/boilerplate",
+  "description": "Drupal Boilerplate",
   "repositories": [
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "frdh/mmenu-js",
-        "type": "drupal-library",
-        "version": "8.5.24",
-        "dist": {
-          "url": "https://github.com/FrDH/mmenu-js/archive/refs/tags/v8.5.24.zip",
-          "type": "zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "joeldbirch/superfish",
-        "type": "drupal-library",
-        "version": "1.7.10",
-        "dist": {
-          "url": "https://github.com/joeldbirch/superfish/archive/refs/tags/v1.7.10.zip",
-          "type": "zip"
-        }
-      }
     }
   ],
   "require": {
@@ -43,6 +12,7 @@
     "composer/installers": "^1.9",
     "cweagans/composer-patches": "^1.7",
     "drupal/admin_toolbar": "^3.0",
+    "drupal/captcha": "^2.0",
     "drupal/config_perms": "^2.0",
     "drupal/core-composer-scaffold": "^10.1",
     "drupal/core-project-message": "^10.1",
@@ -68,8 +38,6 @@
     "drupal/view_unpublished": "^1.0",
     "drupal/webform": "^6.2@beta",
     "drush/drush": "^12",
-    "frdh/mmenu-js": "^8.5",
-    "joeldbirch/superfish": "^1.7",
     "symfony/dotenv": "^5.3"
   },
   "conflict": {
@@ -107,9 +75,6 @@
     "installer-paths": {
       "web/core": [
         "type:drupal-core"
-      ],
-      "web/libraries/mmenu": [
-        "frdh/mmenu-js"
       ],
       "web/libraries/{$name}": [
         "type:drupal-library"
