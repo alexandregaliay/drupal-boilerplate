@@ -19,9 +19,13 @@ module.exports = {
     },
     port: 3000,
     hot: true,
-    proxy: {
-      '*': 'http://drupalboilerplate.test',
-    },
+    proxy: [
+      {
+        context: ['**'],
+        target: 'http://drupalboilerplate.test'
+      }
+
+    ],
   },
   module: {
     rules: [
