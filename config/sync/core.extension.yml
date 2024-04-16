@@ -16,6 +16,7 @@ module:
   contextual: 0
   ctools: 0
   custom_tokens: 0
+  custom_views_sort: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0

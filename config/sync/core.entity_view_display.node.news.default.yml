@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_new
     - node.type.news
   module:
     - text
@@ -26,4 +27,5 @@ content:
     weight: 1
     region: content
 hidden:
+  field_new: true
   langcode: true

@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Main module file.
+ */
+
+/**
+ * Implements hook_views_data().
+ */
+function custom_views_sort_views_data() {
+  $data = [];
+
+  $data['views']['custom_sort'] = [
+    'title' => t('New + Random'),
+    'help' => t('Sorts by field_new DESC and then randomly.'),
+    'group' => t('Custom'),
+    'sort' => [
+      'id' => 'custom_sort',
+      'field' => 'custom_sort',
+    ],
+  ];
+
+  return $data;
+}

@@ -1,0 +1,8 @@
+name: Custom Views Sort
+description: Provides custom sort to use with views
+package: Boilerplate
+
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - views:views
