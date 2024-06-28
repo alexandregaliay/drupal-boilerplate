@@ -14,7 +14,7 @@ field_name: webform
 entity_type: node
 bundle: webform
 label: Webform
-description: 'Select the webform that you would like to attach to this node.'
+description: 'Sélectionner le formulaire que vous souhaitez lier à ce nœud.'
 required: false
 translatable: false
 default_value:
