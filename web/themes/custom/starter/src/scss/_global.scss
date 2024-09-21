@@ -1,11 +1,11 @@
 ::selection {
-  background: $link;
+  background: var(--bulma-primary);
   /* Safari */
-  color: $link-invert;
+  color: #fff;
 }
 
 ::-moz-selection {
-  background: $link;
+  background: var(--bulma-primary);
   /* Firefox */
-  color: $link-invert;
+  color: #fff;
 }

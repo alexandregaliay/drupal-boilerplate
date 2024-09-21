@@ -1,7 +1,7 @@
 /**----------  Header  ----------*/
 
 header {
-  margin: $size-4 0;
+  margin: var(--bulma-size-4) 0;
 }
 
 .block-system-branding-block {
@@ -11,21 +11,32 @@ header {
 
 .site-logo {
   max-width: 80px;
-  margin-right: $size-3;
+  margin-right: var(--bulma-size-3);
 }
 
 .site-brand {
-  font-size: $size-3;
+  font-size: var(--bulma-size-3);
+}
+
+.site-name {
+  font-weight: var(--bulma-weight-semibold);
+
+  a {
+    color: var(--bulma-primary);
+  }
 }
 
 /*----------  Navigation  ----------*/
+.navbar {
+  margin-bottom: var(--bulma-size-2);
+}
 
 .navbar-menu .menu-item {
   display: flex;
 
   a {
     @extend .navbar-item;
-    font-size: $size-6;
+    font-size: var(--bulma-size-6);
   }
 
   &--active-trail a {
@@ -36,13 +47,20 @@ header {
 }
 
 /*----------  Content  ----------*/
-.region.region-breadcrumb {
-  margin: $size-4 0;
+
+h1.title {
+  font-size: var(--bulma-size-1);
+  margin: var(--bulma-size-3) 0;
+}
+
+.block-local-tasks-block {
+  margin: var(--bulma-size-3) 0;
 }
 
 .field--name-body {
   @extend .content;
   @extend .is-medium;
+  margin-bottom: var(--bulma-size-2);
 }
 
 /*----------  Forms  ----------*/
@@ -54,7 +72,7 @@ header {
 /**----------  Footer  ----------*/
 
 footer {
-  margin: $size-2 0;
+  margin: var(--bulma-size-2) 0;
 }
 
 .signature img {

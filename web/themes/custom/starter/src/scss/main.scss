@@ -1,9 +1,6 @@
-@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+$drupal-blue: #009cde;
 
-// Update Bulma's global variables
-$fullhd-enabled: false;
-$blue: #0f9cde;
-
-@import '~bulma/bulma';
+@import 'bulma';
 @import 'global';
 @import 'layout';

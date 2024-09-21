@@ -22,9 +22,8 @@ module.exports = {
     proxy: [
       {
         context: ['**'],
-        target: 'http://drupalboilerplate.test'
-      }
-
+        target: 'http://drupalboilerplate.test',
+      },
     ],
   },
   module: {

@@ -3,7 +3,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   var $burgers = document.querySelectorAll('.navbar-burger');
 
-  console.log($burgers);
   if ($burgers.length > 0) {
     $burgers.forEach(function ($el) {
       if (!$el.dataset.target) {

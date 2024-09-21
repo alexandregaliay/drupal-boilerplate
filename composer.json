@@ -101,5 +101,8 @@
       ]
     },
     "patches": {}
+  },
+  "require-dev": {
+    "drupal/devel": "^5.3"
   }
 }
