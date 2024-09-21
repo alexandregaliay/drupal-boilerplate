@@ -2,4 +2,4 @@
 
 # Drupal Boilerplate
 
--- Work in progress --
+with Bulma CSS
