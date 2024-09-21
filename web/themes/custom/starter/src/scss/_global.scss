@@ -1,11 +1,18 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+// Colors
+$drupal-blue: #009cde;
+
+// Selection
 ::selection {
   background: var(--bulma-primary);
   /* Safari */
-  color: #fff;
+  color: var(--bulma-primary-bold);
 }
 
 ::-moz-selection {
   background: var(--bulma-primary);
   /* Firefox */
-  color: #fff;
+  color: var(--bulma-primary-bold);
 }

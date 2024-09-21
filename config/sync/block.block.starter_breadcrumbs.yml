@@ -8,7 +8,7 @@ dependencies:
     - starter
 id: starter_breadcrumbs
 theme: starter
-region: breadcrumb
+region: highlighted
 weight: -3
 provider: null
 plugin: system_breadcrumb_block
@@ -17,4 +17,8 @@ settings:
   label: Breadcrumbs
   label_display: '0'
   provider: system
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

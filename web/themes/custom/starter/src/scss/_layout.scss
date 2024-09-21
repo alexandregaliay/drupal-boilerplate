@@ -1,7 +1,7 @@
 /**----------  Header  ----------*/
 
 header {
-  margin: var(--bulma-size-4) 0;
+  margin-bottom: var(--bulma-size-4);
 }
 
 .block-system-branding-block {
@@ -14,22 +14,20 @@ header {
   margin-right: var(--bulma-size-3);
 }
 
-.site-brand {
-  font-size: var(--bulma-size-3);
-}
-
 .site-name {
+  font-size: var(--bulma-size-3);
   font-weight: var(--bulma-weight-semibold);
 
   a {
-    color: var(--bulma-primary);
+    color: $drupal-blue;
   }
 }
 
-/*----------  Navigation  ----------*/
-.navbar {
-  margin-bottom: var(--bulma-size-2);
+.site-slogan {
+  font-size: var(--bulma-size-4);
 }
+
+/*----------  Navigation  ----------*/
 
 .navbar-menu .menu-item {
   display: flex;
@@ -46,11 +44,37 @@ header {
   }
 }
 
-/*----------  Content  ----------*/
+/*----------  Highlighted  ----------*/
+.breadcrumb {
+  margin-bottom: var(--bulma-size-5);
+
+  a {
+    color: var(--bulma-primary-invert);
+
+    &:hover {
+      color: var(--bulma-primary-bold);
+    }
+  }
+
+  li {
+    & + li::before {
+      color: var(--bulma-primary-invert);
+    }
+
+    &.is-active a {
+      color: var(--bulma-primary-invert);
+    }
+  }
+}
 
 h1.title {
   font-size: var(--bulma-size-1);
-  margin: var(--bulma-size-3) 0;
+}
+
+/*----------  Content  ----------*/
+
+[data-drupal-messages] {
+  margin: var(--bulma-size-5) 0;
 }
 
 .block-local-tasks-block {
@@ -63,6 +87,18 @@ h1.title {
   margin-bottom: var(--bulma-size-2);
 }
 
+/*----------  News  ----------*/
+
+.view-news {
+  .view-content {
+    @extend .grid;
+  }
+
+  .views-row {
+    @extend .cell;
+  }
+}
+
 /*----------  Forms  ----------*/
 
 .button--primary {
@@ -72,7 +108,7 @@ h1.title {
 /**----------  Footer  ----------*/
 
 footer {
-  margin: var(--bulma-size-2) 0;
+  margin-top: var(--bulma-size-2);
 }
 
 .signature img {

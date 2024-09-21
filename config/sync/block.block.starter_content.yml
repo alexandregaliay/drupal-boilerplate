@@ -1,0 +1,20 @@
+uuid: 375843e2-9a3d-4615-aae9-c72949673db4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - starter
+id: starter_content
+theme: starter
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu principal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -4,8 +4,7 @@
 
 // Override Bulma utilities
 @use 'bulma/sass/utilities' with (
-  $family-primary: 'Roboto, sans-serif',
-  $fullhd-enabled: false
+  $family-primary: 'Roboto, sans-serif'
 );
 
 // Bulma base
@@ -17,8 +16,8 @@
 // Bulma components
 @forward 'bulma/sass/components/breadcrumb';
 @forward 'bulma/sass/components/card';
-@forward 'bulma/sass/components/dropdown';
-@forward 'bulma/sass/components/menu';
+// @forward 'bulma/sass/components/dropdown';
+// @forward 'bulma/sass/components/menu';
 @forward 'bulma/sass/components/message';
 @forward 'bulma/sass/components/modal';
 @forward 'bulma/sass/components/navbar';
@@ -42,16 +41,38 @@
 @forward 'bulma/sass/elements/title';
 
 // Bulma form
-@forward 'bulma/sass/form';
+@forward 'bulma/sass/form/checkbox-radio';
+@forward 'bulma/sass/form/file';
+@forward 'bulma/sass/form/input-textarea';
+@forward 'bulma/sass/form/select';
+@forward 'bulma/sass/form/shared';
+@forward 'bulma/sass/form/tools';
 
 // Bulma grid
-@forward 'bulma/sass/grid';
+@forward 'bulma/sass/grid/columns';
+@forward 'bulma/sass/grid/grid';
 
 // Bulma helpers
-@forward 'bulma/sass/helpers';
+@forward 'bulma/sass/helpers/aspect-ratio';
+@forward 'bulma/sass/helpers/border';
+@forward 'bulma/sass/helpers/color';
+@forward 'bulma/sass/helpers/flexbox';
+@forward 'bulma/sass/helpers/float';
+@forward 'bulma/sass/helpers/gap';
+@forward 'bulma/sass/helpers/other';
+@forward 'bulma/sass/helpers/overflow';
+@forward 'bulma/sass/helpers/position';
+@forward 'bulma/sass/helpers/spacing';
+@forward 'bulma/sass/helpers/typography';
+@forward 'bulma/sass/helpers/visibility';
 
 // Bulma layout
-@forward 'bulma/sass/layout/';
+@forward 'bulma/sass/layout/container';
+@forward 'bulma/sass/layout/footer';
+@forward 'bulma/sass/layout/hero';
+@forward 'bulma/sass/layout/level';
+@forward 'bulma/sass/layout/media';
+@forward 'bulma/sass/layout/section';
 
 // Bulma themes
 @forward 'bulma/sass/themes';

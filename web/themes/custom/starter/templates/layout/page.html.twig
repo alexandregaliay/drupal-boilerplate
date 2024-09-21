@@ -1,13 +1,12 @@
 <div class="container">
-  <header role="banner">
+  <header role="banner" class="section">
     {{ page.header }}
+    {{ page.primary_menu }}
+    {{ page.secondary_menu }}
   </header>
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
-  {{ page.breadcrumb }}
   {{ page.highlighted }}
   {{ page.help }}
-  <main role="main">
+  <main role="main" class="section">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
     <div class="layout-content">
       {{ page.content }}
@@ -23,12 +22,14 @@
       </aside>
     {% endif %}
   </main>
-  <footer role="contentinfo">
+</div>
+<footer role="contentinfo" class="footer">
+  <div class="container">
     {% if page.footer %}
       {{ page.footer }}
     {% endif %}
     <div class="signature">
       <img src="{{ base_path ~ directory}}/images/logo-footer.svg" />
     </div>
-  </footer>
-</div>
+  </div>
+</footer>

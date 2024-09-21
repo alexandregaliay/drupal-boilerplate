@@ -1,4 +1,4 @@
-uuid: 6181e2d9-4bc9-4b85-8d64-c58679acf1b1
+uuid: 44c17910-76cf-4498-aa03-a886947b1ed7
 langcode: fr
 status: true
 dependencies:
@@ -8,10 +8,10 @@ dependencies:
     - system
   theme:
     - starter
-id: navigationprincipale
+id: starter_nav_main
 theme: starter
 region: primary_menu
-weight: -3
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:

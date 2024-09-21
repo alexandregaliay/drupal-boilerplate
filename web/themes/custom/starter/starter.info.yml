@@ -25,7 +25,6 @@ regions:
   primary_menu: Main navigation
   highlighted: Highlighted
   help: Help
-  breadcrumb: Breadcrumb
   content: Content
   sidebar_first: Left sidebar
   sidebar_second: Right sidebar

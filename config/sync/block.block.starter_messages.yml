@@ -11,7 +11,7 @@ _core:
 id: starter_messages
 theme: starter
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: system_messages_block
 settings:
