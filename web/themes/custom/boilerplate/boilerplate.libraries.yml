@@ -1,6 +1,6 @@
 global:
   css:
-    base:
-      dist/bundle.css: {}
+    component:
+      dist/main.css: {}
   js:
-    dist/bundle.js: {}
+    dist/main.js: {}

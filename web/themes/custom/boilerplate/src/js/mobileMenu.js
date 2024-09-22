@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
-  var $burgers = document.querySelectorAll('.navbar-burger');
+  const $burgers = document.querySelectorAll('.navbar-burger');
 
   if ($burgers.length > 0) {
     $burgers.forEach(function ($el) {
