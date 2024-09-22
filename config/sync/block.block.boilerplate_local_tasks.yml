@@ -3,11 +3,11 @@ langcode: fr
 status: true
 dependencies:
   theme:
-    - starter
+    - boilerplate
 _core:
   default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
-id: starter_local_tasks
-theme: starter
+id: boilerplate_local_tasks
+theme: boilerplate
 region: content
 weight: -3
 provider: null
@@ -19,4 +19,4 @@ settings:
   provider: core
   primary: true
   secondary: true
-visibility: {  }
+visibility: {}

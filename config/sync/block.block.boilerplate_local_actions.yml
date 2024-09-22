@@ -3,11 +3,11 @@ langcode: fr
 status: true
 dependencies:
   theme:
-    - starter
+    - boilerplate
 _core:
   default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
-id: starter_local_actions
-theme: starter
+id: boilerplate_local_actions
+theme: boilerplate
 region: content
 weight: -2
 provider: null
@@ -17,4 +17,4 @@ settings:
   label: "Actions d'administration principales"
   label_display: '0'
   provider: core
-visibility: {  }
+visibility: {}

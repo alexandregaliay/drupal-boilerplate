@@ -5,9 +5,9 @@ dependencies:
   module:
     - system
   theme:
-    - starter
-id: starter_breadcrumbs
-theme: starter
+    - boilerplate
+id: boilerplate_breadcrumbs
+theme: boilerplate
 region: highlighted
 weight: -3
 provider: null

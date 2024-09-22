@@ -75,7 +75,7 @@ module:
   paragraphs: 11
   minimal: 1000
 theme:
-  starter: 0
+  boilerplate: 0
   claro: 0
   stable9: 0
   starterkit: 0

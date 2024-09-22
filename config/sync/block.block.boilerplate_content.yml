@@ -5,9 +5,9 @@ dependencies:
   module:
     - system
   theme:
-    - starter
-id: starter_content
-theme: starter
+    - boilerplate
+id: boilerplate_content
+theme: boilerplate
 region: content
 weight: -1
 provider: null
@@ -17,4 +17,4 @@ settings:
   label: 'Contenu principal'
   label_display: '0'
   provider: system
-visibility: {  }
+visibility: {}

@@ -3,11 +3,11 @@ langcode: fr
 status: true
 dependencies:
   theme:
-    - starter
+    - boilerplate
 _core:
   default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
-id: starter_page_title
-theme: starter
+id: boilerplate_page_title
+theme: boilerplate
 region: highlighted
 weight: -2
 provider: null
@@ -17,4 +17,4 @@ settings:
   label: 'Titre de page'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility: {}

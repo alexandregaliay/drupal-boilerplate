@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - starter
-id: starter_nav_main
-theme: starter
+    - boilerplate
+id: boilerplate_nav_main
+theme: boilerplate
 region: primary_menu
 weight: 0
 provider: null
@@ -22,4 +22,4 @@ settings:
   level: 1
   depth: 0
   expand_all_items: true
-visibility: {  }
+visibility: {}
