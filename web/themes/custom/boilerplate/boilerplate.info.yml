@@ -1,20 +1,45 @@
 name: Boilerplate
 type: theme
+description: Drupal Boilerplate using Bulma CSS
 base theme: starterkit
-description: Basic theme for Drupal Boilerplate
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^10
 
 # Defines libraries group in which we can add css/js.
 libraries:
   - boilerplate/global
 
+# Disables herited libraries
 libraries-override:
+  core/normalize:
+    css:
+      base:
+        assets/vendor/normalize-css/normalize.css: false
+
   starterkit/base:
     css:
       component:
         css/components/breadcrumb.css: false
+        css/components/button.css: false
+        css/components/field.css: false
+        css/components/form.css: false
+        css/components/inline-form.css: false
+        css/components/item-list.css: false
         css/components/menu.css: false
+        css/components/messages.css: false
+        css/components/pager.css: false
         css/components/tabs.css: false
+        css/components/textarea.css: false
+
+  starterkit/file:
+    css:
+      component:
+        css/components/file.css: false
+
+  system/base:
+    css:
+      component:
+        /core/themes/stable9/css/system/components/align.module.css: false
+        /core/themes/stable9/css/system/components/item-list.module.css: false
 
 # Defines custom logo path
 #logo: "logo-custom.svg"
