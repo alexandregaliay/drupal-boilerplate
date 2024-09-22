@@ -3,10 +3,8 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(({ mode }) => {
   return {
-    base: '/',
     build: {
       manifest: true,
-      emptyOutDir: true,
       rollupOptions: {
         input: ['./src/js/main.js', './src/scss/main.scss'],
         output: {
@@ -16,17 +14,12 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
-      cors: true,
-      open: true,
       host: 'drupalboilerplate.test',
-      origin: 'http://drupalboilerplate.test',
       strictPort: true,
+      open: true,
       proxy: {
-        '/': {
-          target: 'http://drupalboilerplate.test',
-        },
+        '/': 'http://drupalboilerplate.test',
       },
-      hmr: true,
     },
   };
 });

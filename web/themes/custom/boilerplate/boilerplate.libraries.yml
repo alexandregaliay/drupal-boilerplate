@@ -1,6 +1,6 @@
 global:
   css:
-    component:
-      dist/main.css: {}
+    theme:
+      dist/main.css: { attributes: { rel: preload, as: style } }
   js:
     dist/main.js: {}
