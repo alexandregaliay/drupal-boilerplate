@@ -1,4 +1,4 @@
-<img src="web/themes/custom/starter/logo.svg" width="90">
+<img src="web/themes/custom/boilerplate/logo.svg" width="90">
 
 # Drupal Boilerplate
 
