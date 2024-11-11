@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    publicPath: '/themes/custom/starter/dist/',
+    publicPath: '/themes/custom/boilerplate/dist/',
   },
   devServer: {
     allowedHosts: 'all',
