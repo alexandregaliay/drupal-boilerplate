@@ -4,8 +4,10 @@
   "main": "webpack.config.js",
   "description": "Uses Bulma for Drupal Boilerplate",
   "license": "ISC",
+  "type": "module",
   "scripts": {
     "dev": "vite",
+    "preview": "vite preview",
     "build": "vite build",
     "cleanup": "rm -Rf node_modules dist && pnpm install"
   },

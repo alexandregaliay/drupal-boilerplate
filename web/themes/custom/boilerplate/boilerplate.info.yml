@@ -6,7 +6,8 @@ core_version_requirement: ^10
 
 # Defines libraries group in which we can add css/js.
 libraries:
-  - boilerplate/global
+  - boilerplate/global-css
+  - boilerplate/global-js
 
 # Disables herited libraries
 libraries-override:

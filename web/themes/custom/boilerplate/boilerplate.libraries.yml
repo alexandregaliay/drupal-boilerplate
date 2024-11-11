@@ -1,6 +1,8 @@
-global:
+global-css:
   css:
     theme:
       dist/main.css: { attributes: { rel: preload, as: style } }
+
+global-js:
   js:
-    dist/main.js: {}
+    dist/main.js: { attributes: { type: 'module' } }
