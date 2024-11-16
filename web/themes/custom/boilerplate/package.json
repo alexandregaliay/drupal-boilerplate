@@ -5,8 +5,8 @@
   "description": "Uses Bulma for Drupal Boilerplate",
   "license": "ISC",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "cleanup": "rm -Rf node_modules dist && pnpm install"
   },
   "engines": {
@@ -17,15 +17,18 @@
     "bulma": "^1.0.2"
   },
   "devDependencies": {
+    "babel-loader": "^9.2.1",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
-    "mini-css-extract-plugin": "^2.9.1",
+    "mini-css-extract-plugin": "^2.9.2",
     "sass": "^1.78.0",
     "sass-loader": "^16.0.1",
     "style-loader": "^4.0.0",
-    "webpack": "^5.94.0",
+    "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.1.0"
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1",
+    "webpackbar": "^7.0.0"
   }
 }
