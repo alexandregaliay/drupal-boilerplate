@@ -36,7 +36,7 @@
     "drupal/upgrade_status": "^4.0",
     "drupal/view_unpublished": "^1.0",
     "drupal/webform": "^6.2@beta",
-    "drush/drush": "^12",
+    "drush/drush": "^13.3",
     "symfony/dotenv": "^5.3"
   },
   "conflict": {
