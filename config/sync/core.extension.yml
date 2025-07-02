@@ -39,6 +39,7 @@ module:
   language: 0
   link: 0
   locale: 0
+  mailer_transport: 0
   mailsystem: 0
   menu_link_content: 0
   menu_trail_by_path: 0
