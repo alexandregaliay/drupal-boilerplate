@@ -2,7 +2,7 @@ name: Boilerplate
 type: theme
 description: Drupal Boilerplate using Bulma CSS
 base theme: starterkit
-core_version_requirement: ^10
+core_version_requirement: ^10 || ^11
 
 # Defines libraries group in which we can add css/js.
 libraries:
