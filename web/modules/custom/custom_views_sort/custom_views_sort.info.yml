@@ -3,6 +3,6 @@ description: Provides custom sort to use with views
 package: Boilerplate
 
 type: module
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^10 || ^11
 dependencies:
   - views:views
