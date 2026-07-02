@@ -35,12 +35,6 @@ libraries-override:
       component:
         css/components/file.css: false
 
-  system/base:
-    css:
-      component:
-        /core/themes/stable9/css/system/components/align.module.css: false
-        /core/themes/stable9/css/system/components/item-list.module.css: false
-
 # Defines custom logo path
 #logo: "logo-custom.svg"
 

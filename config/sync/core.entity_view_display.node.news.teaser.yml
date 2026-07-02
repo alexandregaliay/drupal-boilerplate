@@ -21,22 +21,13 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 1
-    region: content
-  field_new:
-    type: boolean
-    label: inline
-    settings:
-      format: unicode-yes-no
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
     weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
+  field_new: true
   langcode: true
