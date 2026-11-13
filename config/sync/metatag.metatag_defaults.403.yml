@@ -7,5 +7,5 @@ _core:
 id: '403'
 label: 'page 403 accès refusé'
 tags:
-  canonical_url: '--aucun--'
-  shortlink: '--aucun--'
+  canonical_url: '<none>'
+  shortlink: '<none>'
